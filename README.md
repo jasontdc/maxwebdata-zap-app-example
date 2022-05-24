@@ -1,4 +1,4 @@
-# zapier-maximizer-example
+# maxwebdata-zap-app-example
 
 ## What is this?
 
@@ -36,7 +36,7 @@ The remainder of this guide assumes that you have a dev environment that meets t
 
 Clone the repo to your local machine:
 ```
-git clone git@github.com:jasontdc/zapier-maximizer-example.git
+git clone git@github.com:jasontdc/maxwebdata-zap-app-example.git
 ```
 
 Edit the `package.json` file and change the `name` property to the name you want to use for your custom app. It should be unique, as it is used in the example as the ApplicationId for any Custom records created in Maximizer by the app.
