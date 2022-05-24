@@ -10,7 +10,7 @@ In this example, you'll find some basic functionality to allow you to search for
 
 You shouldn't. Whenever possible, you should use the [out-of-the-box Maximizer CRM integration for Zapier](https://zapier.com/help/doc/how-get-started-with-maximizer-on-zapier). It is built and maintained by Maximizer, will add support for the latest Maximizer functionality, doesn't require any custom coding on your part, and is compatible with Maximizer's cloud offering, Maximizer CRM Live.
 
-But if you have a use-case that isn't supported by the Maximizer CRM Zapier integration, or if your workflow would be too complex to implement directly in a Zap, you can use this project to build out your own custom logic incorporating Maximizer.Web.Data API functionality.
+But if you have a use-case that isn't supported by the Maximizer CRM Zapier integration--for example, if you need to search for Opportunities by Objective, or to search for Address Book entries by a UDF value--or if your workflow would be too complex to implement directly in a Zap, you can use this project to build out your own custom logic incorporating Maximizer.Web.Data API functionality.
 
 ## Disclaimer
 
