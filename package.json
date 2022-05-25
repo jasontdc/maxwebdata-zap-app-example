@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --testTimeout 10000",
-    "coverage": "jest --testTimeout 10000 --coverage",
+    "test": "$(npm bin)/jest --testTimeout 10000",
+    "coverage": "$(npm bin)/jest --testTimeout 10000 --coverage",
     "lint": "$(npm bin)/eslint . --ext .js",
     "zapier": "$(npm bin)/zapier"
   },
