@@ -12,10 +12,6 @@ You shouldn't. Whenever possible, you should use the [out-of-the-box Maximizer C
 
 But if you have a use-case that isn't supported by the Maximizer CRM Zapier integration--for example, if you need to search for Opportunities by Objective, or to search for Address Book entries by a UDF value--or if your workflow would be too complex to implement directly in a Zap, you can use this project to build out your own custom logic incorporating Maximizer.Web.Data API functionality.
 
-## Disclaimer
-
-This example project is not supported by or affiliated with Maximizer or Zapier in any way. If you encounter any problems with the example, please create an issue here, but don't expect support or help from Maximizer or Zapier. Oh, and it will not work with the Maximizer CRM Live cloud product (though you could easily extend it to add CRM Live support if you were so inclined).
-
 ## I'm sold! Let's get started!
 
 Woah, slow down friend. Before you start working with this project, you're going to need to do a few things...
@@ -26,9 +22,11 @@ In order to deploy your own private Zap App, you will need a Zapier Developer Ac
 
 You'll also need a regular Zapier account to create Zaps using your custom Zap App. If you don't already have a Zapier account, you can sign up for one [here](https://zapier.com/).
 
-### Read the Zapier CLI Docs
+### Read the Zapier Platform CLI Docs
 
-This project is built using the Zapier CLI. If you're not already familiar with it, I would strongly recommend reading the [Getting Started with Zapier Platform CLI guide](https://platform.zapier.com/cli_tutorials/getting-started), and/or following the [Zapier CLI Tutorial](https://developer.zapier.com/cli-guide/introduction) to learn about the platform and the core concepts involved with building a Zap App.
+If you're not already familiar with the Zapier Platform CLI, I would strongly recommend following the [Zapier CLI Tutorial](https://developer.zapier.com/cli-guide/introduction). It will help you to get your development environment set up, and to learn about the platform and the core concepts involved with building a Zap App.
+
+In addition, I would also suggest reading the [Getting Started with Zapier Platform CLI guide](https://platform.zapier.com/cli_tutorials/getting-started), as it provides some basic guidance for building and customizing a Zap App using the Zapier Platform CLI.
 
 The remainder of this guide assumes that you have a dev environment that meets the [Zapier CLI requirements](https://github.com/zapier/zapier-platform/blob/master/packages/cli/README.md#requirements), you have the Zapier CLI installed, and you have logged-in to your account via the `zapier login` command.
 
@@ -117,7 +115,21 @@ With your Zap App connected to your Maximizer Address Book, you can now start bu
 
 And when you're ready to start building out your own functionality, check out the latest Zapier docs: https://github.com/zapier/zapier-platform/blob/master/packages/cli/README.md.
 
+## What's Next?
+
+Ok, so you've got your custom Zap App deployed, and you're using it to create and search for Custom records in your Zaps. Now it's time to start adding your own functionality.
+
+As you know from the Zapier Platform CLI Tutorial (you did read it, didn't you?), the core of a Zap App consists of triggers, creates, and searches. So when it comes to building on top of this example, you will probably want to update or replace the example "Custom" trigger, search, and create actions, and to add your own.
+
+The [Zapier CLI Platform documentation](https://github.com/zapier/zapier-platform/blob/master/packages/cli/README.md#triggerssearchescreates) contains information on how to implement triggers, searches, and creates in a Zap App. The information on [Input Fields](https://github.com/zapier/zapier-platform/blob/master/packages/cli/README.md#input-fields) is also useful when it comes to adding user input fields to your Zap actions.
+
+And for information on working with the Maximizer.Web.Data API, you'll want to refer to the [Maximizer.Web.Data Reference](https://developer.maximizer.com/doc/maximizerwebdata) on the Maximizer Developer Connect site. And if you have any questions about using the Maximizer.Web.Data API or run into any issues when using it, you can post them in the [Maximizer.Web.Data Forum](https://developer.maximizer.com/forums/maximizerwebdata) on the Maximizer Developer Connect site (I hear the moderator is pretty friendly).
+
 ## Additional Notes
+
+## A Disclaimer
+
+This example project is not supported by or affiliated with Maximizer or Zapier in any way. If you encounter any problems with the example, please create an issue here, but don't expect support or help from Maximizer or Zapier. Oh, and it will not work with the Maximizer CRM Live cloud product (though you could easily extend it to add CRM Live support if you were so inclined).
 
 ### Test Coverage
 
@@ -138,7 +150,10 @@ npm run zapier <command> -- --<option>=<value>
 ```
 For example, you could get detailed Zapier console logs like this: `npm run zapier logs -- --type=console --detailed`.
 
-
 ### VSCode DevContainer
 
 If you use VSCode, the example project includes a devcontainer definition file that you can use with the VSCode Remote Development extension pack. For details on how to get started developing in containers with VSCode check out the docs here: https://code.visualstudio.com/docs/remote/containers
+
+## Contributions Welcome
+
+Pull requests will be accepted for any issues or improvements you'd like to see added to this example project. 
