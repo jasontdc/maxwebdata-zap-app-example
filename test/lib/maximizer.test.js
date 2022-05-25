@@ -114,8 +114,8 @@ describe('Maximizer', () => {
         headers: {example: 'headers'},
         body: 'request',
       });
-      // Should have logged twice
-      expect(z.console.log.mock.calls.length).toBe(2);
+      // Should have logged only once
+      expect(z.console.log.mock.calls.length).toBe(1);
       // Should have called the RefreshAuthError function
       expect(z.errors.RefreshAuthError.mock.calls.length).toBe(1);
       // Should have thrown
