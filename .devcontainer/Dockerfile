@@ -14,3 +14,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
 # [Optional] Uncomment if you want to install more global node modules
 # RUN su node -c "npm install -g <your-package-list-here>"
+
+# Add node_modules bin folder to path
+ENV PATH /workspace/node_modules/.bin:$PATH
